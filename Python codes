@@ -1,0 +1,39 @@
+1. GCD of Two Numbers
+
+Code:
+def gcd(a, b):
+while b:
+a, b = b, a % b
+return a
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+print("GCD of", x, "and", y, "is:", gcd(x, y))
+Output:
+Input: 24, 36
+Output: GCD of 24 and 36 is: 12
+
+2. Fibonacci Series
+
+Code:
+n = int(input("Enter number of terms: "))
+a, b = 0, 1
+for i in range(n):
+print(a, end=' ')
+a, b = b, a + b
+Output:
+Input: 7
+Output: 0 1 1 2 3 5 8
+
+3. Array Elements (Sum and
+Average)
+
+Code:
+arr = []
+n = int(input("Enter number of elements: "))
+for i in range(n):
+arr.append(int(input()))
+print("Sum =", sum(arr))
+print("Average =", sum(arr)/n)
+Output:
+Input: [10,20,30,40,50]
+Output: Sum=150, Avg=30
